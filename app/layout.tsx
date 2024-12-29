@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import { config } from "@/config/config";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 type Props = {
   children: React.ReactNode;
@@ -28,13 +29,14 @@ export default function RootLayout({ children }: Props) {
         <Clarity />
         <AdSense />
       </head>
-      <body className="antialiased">
+      <body className="bg-zinc-800 text-white antialiased">
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow w-full max-w-5xl mx-auto px-2 md:px-4">
             {children}
           </main>
           <Footer />
+          <Toaster />
         </div>
       </body>
     </html>

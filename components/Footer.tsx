@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="border-t">
+        <footer className="">
             <div className="max-w-5xl mx-auto px-4 py-6">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">

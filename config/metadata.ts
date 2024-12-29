@@ -34,7 +34,7 @@ export async function generateHomePageMetadata(): Promise<Metadata> {
 
 export async function generateTermsPageMetadata(): Promise<Metadata> {
     const title = "Terms of Service";
-    const description = "Terms of Service Description";
+    const description = "Terms of service for Example App website. Information about this music creation game, intellectual property rights, and website usage guidelines.";
     const canonical = `${config.baseUrl}/terms`;
     return {
         title: title,
@@ -47,7 +47,7 @@ export async function generateTermsPageMetadata(): Promise<Metadata> {
 
 export async function generatePrivacyPageMetadata(): Promise<Metadata> {
     const title = "Privacy Policy";
-    const description = "Privacy Policy Description";
+    const description = "Privacy policy for Example App website. We respect your privacy - no personal data collection, no cookies, no tracking. Learn about our commitment to user privacy.";
     const canonical = `${config.baseUrl}/privacy`;
     return {
         title: title,
